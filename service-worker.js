@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/Potter_Clash/precache-manifest.997c7737d442e12a2e2b62c44bd2d304.js"
+  "/Potter-Clash/precache-manifest.bba7abc4d485acc620a7050a7beaad51.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Potter_Clash/index.html", {
+workbox.routing.registerNavigationRoute("/Potter-Clash/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
