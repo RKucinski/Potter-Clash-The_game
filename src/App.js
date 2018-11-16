@@ -37,11 +37,11 @@ callBackTournament = (data) => {
         return (
             <BrowserRouter>
               <Switch>
-                <Route exact path="/" render={()=><NameFormPlayer getDataBack={this.callBackHome}/>}/>
-                <Route exact path="/Character" render={()=><ChoiceCharacter num="2" getDataBack={this.callBackChoice} homeData={this.state.homeData}/>}/>
-                <Route exact path="/Tournament" render={()=><Tournament getDataBack={this.callBackTournament} gameData={this.state.gameData} choiceData={this.state.choiceData} homeData={this.state.homeData}  />} />
-                <Route exact path="/Game" render={()=><Game getDataBack={this.callBackGame} tournamentData={this.state.tournamentData} choiceData={this.state.choiceData} homeData={this.state.homeData} />} />
-                <Route exact path="/Credits" render={()=><Credits tournamentData={this.state.tournamentData} choiceData={this.state.choiceData} homeData={this.state.homeData} gameData={this.state.gameData} />} />
+                <Route exact path="/" render={(routerProps)=><NameFormPlayer routerProps={routerProps} getDataBack={this.callBackHome}/>}/>
+                <Route exact path="/Character" render={(routerProps)=><ChoiceCharacter routerProps={routerProps} num="2" getDataBack={this.callBackChoice} homeData={this.state.homeData}/>}/>
+                <Route exact path="/Tournament" render={(routerProps)=><Tournament routerProps={routerProps} getDataBack={this.callBackTournament} gameData={this.state.gameData} choiceData={this.state.choiceData} homeData={this.state.homeData}  />} />
+                <Route exact path="/Game" render={(routerProps)=><Game routerProps={routerProps} getDataBack={this.callBackGame} tournamentData={this.state.tournamentData} choiceData={this.state.choiceData} homeData={this.state.homeData} />} />
+                <Route exact path="/Credits" render={(routerProps)=><Credits routerProps={routerProps} tournamentData={this.state.tournamentData} choiceData={this.state.choiceData} homeData={this.state.homeData} gameData={this.state.gameData} />} />
               </Switch>
             </BrowserRouter>
         )
