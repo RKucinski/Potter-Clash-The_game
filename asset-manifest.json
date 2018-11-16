@@ -1,7 +1,7 @@
 {
   "main.css": "/Potter_Clash/static/css/main.c59e3781.chunk.css",
-  "main.js": "/Potter_Clash/static/js/main.f43474ea.chunk.js",
-  "main.js.map": "/Potter_Clash/static/js/main.f43474ea.chunk.js.map",
+  "main.js": "/Potter_Clash/static/js/main.4c586aed.chunk.js",
+  "main.js.map": "/Potter_Clash/static/js/main.4c586aed.chunk.js.map",
   "static/css/1.7983c00d.chunk.css": "/Potter_Clash/static/css/1.7983c00d.chunk.css",
   "static/js/1.aad1b90c.chunk.js": "/Potter_Clash/static/js/1.aad1b90c.chunk.js",
   "static/js/1.aad1b90c.chunk.js.map": "/Potter_Clash/static/js/1.aad1b90c.chunk.js.map",
@@ -23,6 +23,6 @@
   "static/css/main.c59e3781.chunk.css.map": "/Potter_Clash/static/css/main.c59e3781.chunk.css.map",
   "static/css/1.7983c00d.chunk.css.map": "/Potter_Clash/static/css/1.7983c00d.chunk.css.map",
   "index.html": "/Potter_Clash/index.html",
-  "precache-manifest.f657d97fc47444434d8042a13cd3366f.js": "/Potter_Clash/precache-manifest.f657d97fc47444434d8042a13cd3366f.js",
+  "precache-manifest.997c7737d442e12a2e2b62c44bd2d304.js": "/Potter_Clash/precache-manifest.997c7737d442e12a2e2b62c44bd2d304.js",
   "service-worker.js": "/Potter_Clash/service-worker.js"
 }
