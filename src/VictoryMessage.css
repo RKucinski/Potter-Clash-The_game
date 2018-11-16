@@ -1,0 +1,43 @@
+.VictoryText {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    font-size: 30px;
+    z-index: 9999;
+    position: absolute;
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+}
+    .PhotoCoupe{
+    bottom: 40px;
+    margin-bottom: 20px;
+    }
+    
+    .VictoireMessage{
+    color:whitesmoke;
+    text-align: center;
+    font-size:20px;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+    padding:10px;
+    margin: 20px;
+    line-height: 1em;
+    text-shadow: 1px 1px 0px black;
+    }
+    
+    .Button{
+    background-color:orange;
+    text-shadow: 1px 1px 0px white;
+    border:none;
+    margin:5px;
+    width:100px;
+    height:50px !important;
+    font-weight:bold;
+    font-size:12px !important;
+    text-transform:uppercase;
+    color:black !important;
+    }

@@ -1,0 +1,776 @@
+.container {
+  display: flex;
+  margin: 50px auto;
+}
+.App {
+  text-align: center;
+  display: inline;
+}
+
+/* --- LOGO_GAME --- */
+.App-logo {
+  height: 140px;
+  display: block;
+  margin: 0 auto;
+}
+
+.App-header {
+  background-color: black;
+  height: 200px;
+  padding: 15px;
+  color: white;
+}
+
+/* Titre des pages */
+.titre-general {
+  font-family: 'Jolly Lodger', cursive;
+  font-size: 40px;
+  line-height:1em;
+  text-shadow: 1px 2px 3px #000;
+  color:darkorange;
+}
+
+
+/* ------ START_HOMEPAGE ------ */
+
+/* Image de FOND utilisée sur la Homepage & TournamentPage */
+.blocHomePage {
+  width:auto;
+  height:100vh;
+  background-image: url(Img/poudlard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:10px;
+  padding-top:20px;
+  color:white;
+  margin:auto;
+}
+
+.blocOpac a:hover{  text-decoration: none;
+}
+
+/* Le bloc autour des choix + bouton start */
+.blocOpac {
+  width:600px;
+  padding:5px;
+  background: black;
+  margin:50px auto;
+  display: block;
+  text-align: center;
+  background-image: url(https://i.imgur.com/2APivUo.png);
+  border:4px double black;
+  box-shadow: 0px 0px 10px black;
+}
+
+
+/* bouton start Page1 : Accueil et Page 3 : Tournament*/
+.btn-start-p1p3 {
+  font-family: 'Jolly Lodger', cursive;
+  text-shadow: -1px -1px 0px #;
+  color: #3a3a3a;
+  font-weight: bold;
+  font-size:22px;
+  box-shadow: -3px -3px 0px #ca6e07;
+  background:#000;
+  background-size:100%;
+  border:1px double orange;
+  display:block;
+  width:150px;
+  margin:5px auto;
+  margin-bottom:10px;
+  border-radius:3px;
+}
+
+.btn-start-p1p3:hover {
+  color:darkorange;
+  transition: all 0.6s ease-out;
+}
+
+/* Bloc choix de perso */
+.blocChooseName {
+  width:250px;
+  /* background: #B97209;
+  border:4px double black; */
+  opacity:9.7;
+  height:80px;
+  padding:10px;
+  display:inline-block;
+  margin:5px;
+  margin:5px;
+  font-size:10px;
+  text-align: center;
+}
+
+/* Apparence texte titres */
+.chooseTitle {
+  font-family:Times;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 3px #000;
+  color: darkorange;
+  /* font-weight: bold; */
+  font-size:11px;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+}
+
+/* apparence texte qui affiche le nom du joueur sur la PA */
+.txtChooseName {
+  font-size:9px;
+  text-transform: uppercase;
+  font-weight:900;
+  margin:3px auto;
+  color: grey;
+}
+
+/* Apparence de l'input */
+.input-acc {
+  background-color: #565452;
+  border:1px solid black;
+  opacity:0.8;
+  border-radius: 3px;
+  color:white;
+}
+
+/* BLOC & apparence bouton 1vs1 et 4vs4 */
+.btn-choose-nb-player {
+  border:1px solid orange;
+  margin:5px;
+  font-size:10px;
+  display:inline-block;
+  background-color: black;
+  color:lightgrey;
+  text-transform: uppercase;
+  font-weight:bold;
+  border-radius: 3px;
+  box-shadow: -2px -2px 0px orange;
+
+}
+
+/* ------ END_HOMEPAGE ------ */
+
+
+
+/* ------ START_CHOIX DU PERSONNAGE ------ */
+
+.titre-page-choose {
+  font-family: 'Jolly Lodger', cursive;
+  font-size: 40px;
+  line-height:1em;
+  text-shadow: 1px 2px 3px #000;
+  color:darkorange;
+  margin-top:1%;
+}
+
+.bloc-choix-perso {
+  width:160px;
+  height:145px;
+  border:5px solid #1e1e1e;
+  margin:10px;
+  padding:5px;
+  background-color: black;
+  box-shadow: 0px 0px 5px black;
+
+}
+
+.choice{
+  background-size: cover;
+  width: 110px;
+  height: 110px;
+  padding:10px;
+  margin:auto;
+  border-color: rgb(0, 0, 0);
+}
+
+/* Apparence Noms et prénoms */
+.text-names-choose {
+  font-size: 11px;
+  color: lightgrey;
+  font-weight: bold;
+  font-family: Times;
+  text-transform: uppercase;
+  margin:auto;
+}
+
+
+.choixpersonnages button:focus {outline: none;}
+.blocHomePage button:focus {outline: none;}
+
+
+.choixpersonnages {
+  flex-wrap: wrap;
+  display: grid;
+  justify-content: center;
+}
+
+.ChoiceCharacter{
+  color: aliceblue;
+  text-align: center;
+  width: inherit;
+  margin:2%;
+}
+
+.img-choose-select {
+  padding: 25px;
+  display: inline-table !important;
+}
+
+.img-choose-select img{
+  background-color: black;
+  padding: 3px;
+  box-shadow: 0px 0px 20px black;
+  width:70px;
+  height:70px;
+  margin-top: -5px;
+}
+
+.personnagesChoisis{
+  display: -webkit-inline-box;
+}
+
+/* Apparences des noms persos choisis */
+.name-choose-select1 {
+  font-size: 14px;
+  text-shadow: 1px 1px 0px black;
+    margin-top: -15px;
+}
+
+.name-choose-select2 {
+  font-size: 9px;
+  text-shadow: 1px 1px 0px black;
+  text-transform:uppercase;
+  padding:2px;
+  background: black;
+  margin:4px auto;
+}
+
+.btn-page-choose {
+  background-color: black;
+  color:grey;
+  font-family: 'Jolly Lodger', cursive;
+  font-size: 25px;
+  line-height: 1em;
+  width:100px;
+  box-shadow:-3px -3px 0px orange;
+  border-radius: 3px;
+  border:1px solid orange;
+}
+
+.btn-page-choose:hover {
+  color:darkorange;
+  transition: all 0.6s ease-out;
+}
+/* ------ END_CHOIX_PERSONNAGE ------ */
+
+
+
+
+/* ------- START_PAGE_TOURNOI ------- */
+.bloc-titre-tour {
+  display: block;
+  text-align:center;
+  margin:5px;
+}
+
+.bloc-page-tournoi {
+  margin:auto;
+  margin-top:1%;
+  background:black;
+  width:50%;
+  background-image: url(https://i.imgur.com/2APivUo.png);
+  border:4px double black;
+  box-shadow: 0px 0px 10px black;
+}
+
+.img-player-tour {
+  width: 90px;
+  height: 90px;
+  border:5px solid black;
+  box-shadow: 0 0 15px black;
+  margin:auto -20px;
+}
+
+/* Ligne gagnant */
+.duel-final {
+  display:block;
+  margin-top:-40px;
+}
+
+.img-player-win-tour {
+  box-shadow: 0 0 15px darkorange;
+  width: 120px;
+  height: 120px;
+  border:5px solid black;
+  margin:20px -10px -20px;
+  border-radius:100%;
+}
+
+.img-player-win-tour-final {
+  box-shadow: 0 0 15px darkorange;
+  width: 120px;
+  height: 120px;
+  border:5px solid black;
+  margin:20px -10px 20px;
+  border-radius:100%;
+}
+
+/* Ligne début du tournoi */
+.duel-firststep {
+  display:block;
+  margin:auto;
+}
+
+/* Ligne semi-final */
+.duel-semifinal {
+  display:block;
+  margin:10px auto 40px;
+}
+
+/* Image joueur(s) décédé(s) */
+.img-player-dead {
+  width: 90px;
+  height: 90px;
+  border:5px solid black;
+  box-shadow: 0 0 15px black;
+  margin:auto -20px;
+  background-color: red;
+  opacity: 0.5;
+}
+
+
+/* bouton start Page 3 : Tournament*/
+.btn-start-tour {
+  font-family: 'Jolly Lodger', cursive;
+  text-shadow: -1px -1px 0px #;
+  color: #3a3a3a;
+  font-weight: bold;
+  font-size:22px;
+  box-shadow: -3px -3px 0px #ca6e07;
+  background:#000;
+  background-size:100%;
+  border:1px double orange;
+  display:block;
+  width:150px;
+  margin:-10px auto 15px;
+  border-radius:3px;
+}
+
+.btn-start-tour:hover {
+  color:darkorange;
+  transition: all 0.6s ease-out;
+  text-decoration: none;
+}
+
+/* Des trucs on sait pas trop cque c */
+.Trophy {
+  width: 200px;
+  height: 200px;
+}
+
+.victory {
+  margin-top: 10px;
+}
+
+Container.propTypes = {
+  fluid:  PropTypes.bool
+  // applies .container-fluid class
+}
+/* END_PAGE_TOURNOI */
+
+
+
+/* ------ GRID_GAME ------ */
+.Grid {
+  position: absolute;
+}
+
+.Grid-wrapper{
+  position: relative;
+  height: 0;
+  margin: auto;
+
+}
+
+.Cell {
+  border: solid 2px;
+  border-color: rgb(37, 36, 36);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.637);
+
+}
+
+/* End of Grid */
+
+/* Shoot animation */
+
+.shoot{
+  position: relative;
+}
+
+.shoot2{
+  position: relative;
+}
+
+/* End of Shoot animation */
+
+/* Panel Left and Right */
+
+.left {
+  height: 700px;
+  width: 300px;
+  background-color: black;
+}
+.left img {
+  max-height:240px;
+}
+
+.right {
+  height: 700px;
+  width: 300px;
+  background-color: black;
+}
+
+.right img {
+  max-height:240px;
+}
+
+.blocBarVieL {
+  display:flex;
+  justify-content: space-around;
+  margin:10px;
+}
+.blocBarVieR {
+  display:flex;
+  justify-content: space-around;
+  margin:10px;
+}
+.blocSortsL {
+  background-color:black;
+  margin:10px;
+  padding:10px;
+  height:200px;
+  text-align: center;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  }
+.maisonImage {
+  max-width: 100%;
+  width: auto;
+  height: -webkit-fill-available;
+}
+.blocSortsR {
+  background-color: black;
+  margin:10px;
+  padding:10px;
+  height:200px;
+  text-align: center;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.blocTouchesL {
+  display:flex;
+  justify-content: space-around;
+  margin:10px;
+}
+
+.blocTouchesR {
+  display:flex;
+  justify-content: space-around;
+  margin:10px;
+}
+
+.CardPhoto{
+  display: inline-flex;
+  color:white;
+  width: -webkit-fill-available;
+  margin-bottom: 5px;
+}
+
+.Carte{
+  width: 280px;
+  border: 1px solid darkorange !important;
+}
+
+.CarteJoueur {
+  width: 200px;
+}
+
+.picture{
+  display:inline-flex;
+  width: 120px !important;
+  border:5px solid grey;
+  margin-right:5px;
+  margin-bottom: 5px;
+}
+
+.pictureImg {
+  width: 100px;
+  height: 100px;
+}
+
+.Pointvie{
+  text-align: left;
+  float: left;
+  padding-top: 5px;
+  padding-right: 10px;
+  color: darkorange;
+  font-weight:bold;
+}
+.colorback{
+  background-color: black;
+  padding: 15px !important;
+}
+.ColorPlayer{
+  color:white;
+  font-size:12px;
+  text-transform:uppercase;
+  font-weight:bold;
+  text-align: center;
+}
+.CharacterName{
+  width: 35% !important;
+  font-size:11px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+
+/* End of Panel Left and Right */
+
+
+
+
+/* Sprites for characters */
+
+.harryDisplay0{
+  position: relative;
+  background-image: url(Img/potterDown.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.harryDisplay1{
+  position: relative;
+  background-image: url(Img/potterLeft.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.harryDisplay2{
+  position: relative;
+  background-image: url(Img/potterTop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.harryDisplay3{
+  position: relative;
+  background-image: url(Img/potterRight.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+
+.hermioneDisplay0{
+  position: relative;
+  background-image: url(Img/hermioneDown.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.hermioneDisplay1{
+  position: relative;
+  background-image: url(Img/hermioneLeft.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.hermioneDisplay2{
+  position: relative;
+  background-image: url(Img/hermioneTop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.hermioneDisplay3{
+  position: relative;
+  background-image: url(Img/hermioneRight.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+
+.norbertDisplay0{
+  position: relative;
+  background-image: url(Img/norbertDown.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.norbertDisplay1{
+  position: relative;
+  background-image: url(Img/norbertLeft.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.norbertDisplay2{
+  position: relative;
+  background-image: url(Img/norbertTop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.norbertDisplay3{
+  position: relative;
+  background-image: url(Img/norbertRight.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+
+.severusDisplay0{
+  position: relative;
+  background-image: url(Img/severusDown.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.severusDisplay1{
+  position: relative;
+  background-image: url(Img/severusLeft.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.severusDisplay2{
+  position: relative;
+  background-image: url(Img/severusTop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.severusDisplay3{
+  position: relative;
+  background-image: url(Img/severusRight.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+
+.dragoDisplay0{
+  position: relative;
+  background-image: url(Img/dragoDown.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.dragoDisplay1{
+  position: relative;
+  background-image: url(Img/dragoLeft.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.dragoDisplay2{
+  position: relative;
+  background-image: url(Img/dragoTop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.dragoDisplay3{
+  position: relative;
+  background-image: url(Img/dragoRight.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+
+.sybillDisplay0{
+  position: relative;
+  background-image: url(Img/sybillDown.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.sybillDisplay1{
+  position: relative;
+  background-image: url(Img/sybillLeft.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.sybillDisplay2{
+  position: relative;
+  background-image: url(Img/sybillTop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.sybillDisplay3{
+  position: relative;
+  background-image: url(Img/sybillRight.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+
+.lunaDisplay0{
+  position: relative;
+  background-image: url(Img/lunaDown.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.lunaDisplay1{
+  position: relative;
+  background-image: url(Img/lunaLeft.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.lunaDisplay2{
+  position: relative;
+  background-image: url(Img/lunaTop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.lunaDisplay3{
+  position: relative;
+  background-image: url(Img/lunaRight.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+
+.cedricDisplay0{
+  position: relative;
+  background-image: url(Img/cedricDown.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.cedricDisplay1{
+  position: relative;
+  background-image: url(Img/cedricLeft.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.cedricDisplay2{
+  position: relative;
+  background-image: url(Img/cedricTop.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+.cedricDisplay3{
+  position: relative;
+  background-image: url(Img/cedricRight.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 999;
+}
+
+/* PS : ne mettez pas de CSS en dessous d'ici, vu la taille de la section.
+   Si besoin, créez de nouvelles sections au dessus de celle-ci */
