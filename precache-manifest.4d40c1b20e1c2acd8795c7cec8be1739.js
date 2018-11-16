@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Potter-Clash/static/media/coupe3.2b8f8d62.png"
   },
   {
-    "revision": "4cc0c46bd56af5e1336e",
+    "revision": "0c46ec7d5834805b268d",
     "url": "/Potter-Clash/static/css/main.85ce6fc4.chunk.css"
   },
   {
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/Potter-Clash/static/media/keyRight.aca2b5ff.png"
   },
   {
-    "revision": "4cc0c46bd56af5e1336e",
-    "url": "/Potter-Clash/static/js/main.4cc0c46b.chunk.js"
+    "revision": "0c46ec7d5834805b268d",
+    "url": "/Potter-Clash/static/js/main.0c46ec7d.chunk.js"
   },
   {
     "revision": "43b1a27afa42e4b94d23d53902ffda4c",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/Potter-Clash/static/css/1.7983c00d.chunk.css"
   },
   {
-    "revision": "27865ea3146d4199383b29ee5470bf8d",
+    "revision": "48fd582bdc4dd78fb0ad3f760eb49b43",
     "url": "/Potter-Clash/index.html"
   }
 ];
