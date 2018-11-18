@@ -2,7 +2,7 @@
   "name": "potter-clash",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://RKucinski.github.io/Potter_Clash/",
+  "homepage": "https://RKucinski.github.io/Potter-Clash/",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "gh-pages": "^2.0.1",
