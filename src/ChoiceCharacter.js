@@ -2,57 +2,69 @@ import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
 import './App.css';
 import logo from './logoHPC.png';
-// Les characters
-import harrypotter from './Img/Characters/harrypotter.jpeg';
-import cedricdiggory from './Img/Characters/cedricdiggory.jpeg';
-import dragomalfoy from './Img/Characters/dragomalfoy.jpeg';
-import lunalovegood from './Img/Characters/lunalovegood.jpeg';
-import hermionegranger from './Img/Characters/hermionegranger.jpeg';
-import norbertdragonneau from './Img/Characters/norbertdragonneau.jpeg';
-import severussnape from './Img/Characters/severussnape.jpeg';
-import sybilltrelawney from './Img/Characters/sybilltrelawney.jpeg';
+import gryf from './Img/gryf.png'
+import serredaigle from './Img/aigle.png'
+import pouf from './Img/pouf.png'
+import serpentard from './Img/serpentard.png'
+import character0 from './Img/Characters/character0.jpeg'
+import harry from './Img/Characters/character1.jpeg'
+import harrydead from './Img/Characters/character1_died.jpeg'
+import cedric from './Img/Characters/character2.jpeg'
+import cedricdead from './Img/Characters/character2_died.jpeg'
+import malfoy from './Img/Characters/character3.jpeg'
+import malfoydead from './Img/Characters/character3_died.jpeg'
+import luna from './Img/Characters/character4.jpeg'
+import lunadead from './Img/Characters/character4_died.jpeg'
+import hermione from './Img/Characters/character5.jpeg'
+import hermionedead from './Img/Characters/character5_died.jpeg'
+import norbert from './Img/Characters/character6.jpeg'
+import norbertdead from './Img/Characters/character6_died.jpeg'
+import severus from './Img/Characters/character7.jpeg'
+import severusdead from './Img/Characters/character7_died.jpeg'
+import sybill from './Img/Characters/character8.jpeg'
+import sybilldead from './Img/Characters/character8_died.jpeg'
 
 const players = {
     "Harry Potter":{
         name : "Harry Potter",
-        avatar : "./Img/Characters/character1.jpeg",
-        avatarDead : "./Img/Characters/character1_died.jpeg",
-        maison : "./Img/gryf.png",
+        avatar : harry,
+        avatarDead : harrydead,
+        maison : gryf,
         sprites : "harryDisplay",
         border : "red solid thick",
         color : "red",
     },
     "Cedric Diggory":{
         name : "Cedric Diggory",
-        avatar : "./Img/Characters/character2.jpeg",
-        avatarDead : "./Img/Characters/character2_died.jpeg",
-        maison : "./Img/pouf.png",
+        avatar : cedric,
+        avatarDead : cedricdead,
+        maison : pouf,
         sprites : "cedricDisplay",
         border : "yellow solid thick",
         color : "yellow",
     },
     "Drago Malfoy":{
         name : "Drago Malfoy",
-        avatar : "/Images/character3.jpeg",
-        avatarDead : "/Images/character3_died.jpeg",
-        maison : "/Images/serpentard.png",
+        avatar : malfoy,
+        avatarDead : malfoydead,
+        maison : serpentard,
         sprites : "dragoDisplay",
         border : "green solid thick",
         color : "green",
     },
     "Luna Lovegood":{
         name : "Luna Lovegood",
-        avatar : "/Images/character4.jpeg",
-        avatarDead : "/Images/character4_died.jpeg",
-        maison : "/Images/aigle.png",
+        avatar : luna,
+        avatarDead : lunadead,
+        maison : serredaigle,
         sprites : "lunaDisplay",
         border : "blue solid thick",
         color : "blue",
     },
     "Hermione Granger":{
         name : "Hermione Granger",
-        avatar : "/Images/character5.jpeg",
-        avatarDead : "/Images/character5_died.jpeg",
+        avatar : hermione,
+        avatarDead : hermionedead,
         maison : "/Images/gryf.png",
         sprites : "hermioneDisplay",
         border : "red solid thick",
@@ -60,27 +72,27 @@ const players = {
     },
     "Norbert Dragonneau":{
         name : "Norbert Dragonneau",
-        avatar : "/Images/character6.jpeg",
-        avatarDead : "/Images/character6_died.jpeg",
-        maison : "/Images/pouf.png",
+        avatar : norbert,
+        avatarDead : norbertdead,
+        maison : pouf,
         sprites : "norbertDisplay",
         border : "yellow solid thick",
         color : "yellow",
     },
     "Severus Snape":{
         name : "Severus Snape",
-        avatar : "/Images/character7.jpeg",
-        avatarDead : "/Images/character7_died.jpeg",
-        maison : "/Images/serpentard.png",
+        avatar : severus,
+        avatarDead : severusdead,
+        maison : serpentard,
         sprites : "severusDisplay",
         border : "green solid thick",
         color : "green",
     },
     "Sybill Trelawney":{
         name : "Sybill Trelawney",
-        avatar : "/Images/character8.jpeg",
-        avatarDead : "/Images/character8_died.jpeg",
-        maison : "/Images/aigle.png",
+        avatar : sybill,
+        avatarDead : sybilldead,
+        maison : serredaigle,
         sprites : "sybillDisplay",
         border : "blue solid thick",
         color : "blue",
@@ -94,22 +106,22 @@ class ChoiceCharacter extends Component {
         this.state={
             player1Choice : {
                 name : "0",
-                avatar : "/Images/character0.jpeg",
+                avatar : character0,
                 border : "black double thick",
             },
             player2Choice : {
                 name : "0",
-                avatar : "/Images/character0.jpeg",
+                avatar : character0,
                 border : "black double thick",
             },
             player3Choice : {
                 name : "0",
-                avatar : "/Images/character0.jpeg",
+                avatar : character0,
                 border : "black double thick",
             },
             player4Choice : {
                 name : "0",
-                avatar : "/Images/character0.jpeg",
+                avatar : character0,
                 border : "black double thick",
             },
 
@@ -169,7 +181,7 @@ class ChoiceCharacter extends Component {
             this.borderActivation(nom)
           }
         if (this.state.player1Choice.name !== "0" && this.state.player2Choice.name !== nom && this.state.player3Choice.name !== nom && this.state.player4Choice.name !== nom && choice === this.state.player1Choice){
-            this.setState({player1Choice : {name : "0",avatar : "/Images/character0.jpeg", border : "black double thick",}})
+            this.setState({player1Choice : {name : "0",avatar : character0, border : "black double thick",}})
             this.borderActivation(nom)
             return
           }
@@ -178,7 +190,7 @@ class ChoiceCharacter extends Component {
             this.borderActivation(nom)
           }
         if (this.state.player2Choice.name !== "0" && choice === this.state.player2Choice && this.state.player1Choice.name !== nom && this.state.player3Choice.name !== nom && this.state.player4Choice.name !== nom){
-            this.setState({player2Choice : {name : "0",avatar : "/Images/character0.jpeg", border : "black double thick",}})
+            this.setState({player2Choice : {name : "0",avatar : character0, border : "black double thick",}})
             this.borderActivation(nom)
             return
           }
@@ -187,7 +199,7 @@ class ChoiceCharacter extends Component {
             this.borderActivation(nom)
           }
         if (this.props.homeData.nbrJoueurs === "inline-block" && this.state.player3Choice.name !== "0" && choice === this.state.player3Choice && this.state.player1Choice.name !== nom && this.state.player2Choice.name !== nom && this.state.player4Choice.name !== nom){
-            this.setState({player3Choice : {name : "0",avatar : "/Images/character0.jpeg", border : "black double thick",}})
+            this.setState({player3Choice : {name : "0",avatar : character0, border : "black double thick",}})
             this.borderActivation(nom)
             return
           }
@@ -196,7 +208,7 @@ class ChoiceCharacter extends Component {
             this.borderActivation(nom)
           }
         if (this.props.homeData.nbrJoueurs === "inline-block" && this.state.player4Choice.name !== "0" && choice === this.state.player4Choice && this.state.player1Choice.name !== nom && this.state.player2Choice.name !== nom && this.state.player3Choice.name !== nom){
-            this.setState({player4Choice : {name : "0",avatar : "/Images/character0.jpeg", border : "black double thick",}})
+            this.setState({player4Choice : {name : "0",avatar : character0, border : "black double thick",}})
             this.borderActivation(nom)
             return
           }
@@ -233,7 +245,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Harry Potter"], "Harry Potter")}
                                 style={{
-                                    backgroundImage: `url(${harrypotter})`,
+                                    backgroundImage: harry,
                                     borderColor: this.state.borderChosenCharColor1,
                                 }}
                             ></button>
@@ -245,7 +257,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Cedric Diggory"], "Cedric Diggory")}
                                 style={{
-                                    backgroundImage: `url(${cedricdiggory})`,
+                                    backgroundImage: cedric,
                                     borderColor: this.state.borderChosenCharColor2,
                                 }}
                             ></button>
@@ -257,7 +269,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Drago Malfoy"], "Drago Malfoy")}
                                 style={{
-                                    backgroundImage: `url(${dragomalfoy})`,
+                                    backgroundImage: malfoy,
                                     borderColor: this.state.borderChosenCharColor3,
                                 }}
                             ></button>
@@ -270,7 +282,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Luna Lovegood"], "Luna Lovegood")}
                                 style={{
-                                    backgroundImage: `url(${lunalovegood})`,
+                                    backgroundImage: luna,
                                     borderColor: this.state.borderChosenCharColor4,
                                 }}
                             ></button>
@@ -285,7 +297,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Hermione Granger"], "Hermione Granger")}
                                 style={{
-                                    backgroundImage: `url(${hermionegranger})`,
+                                    backgroundImage: hermione,
                                     borderColor: this.state.borderChosenCharColor5,
                                 }}
                             ></button>
@@ -297,7 +309,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Norbert Dragonneau"], "Norbert Dragonneau")}
                                 style={{
-                                    backgroundImage: `url(${norbertdragonneau})`,
+                                    backgroundImage: norbert,
                                     borderColor: this.state.borderChosenCharColor6,
                                 }}
                             ></button>
@@ -309,7 +321,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Severus Snape"], "Severus Snape")}
                                 style={{
-                                    backgroundImage: `url(${severussnape})`,
+                                    backgroundImage: severus,
                                     borderColor: this.state.borderChosenCharColor7,
                                 }}
                             ></button>
@@ -321,7 +333,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Sybill Trelawney"], "Sybill Trelawney")}
                                 style={{
-                                    backgroundImage: `url(${sybilltrelawney})`,
+                                    backgroundImage: sybill,
                                     borderColor: this.state.borderChosenCharColor8,
                                 }}
                             ></button>
