@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "c392bb5eb0b8777fd1bded963eff3faa",
-    "url": "/Potter-Clash/static/media/character6.c392bb5e.jpeg"
+    "revision": "c9328628bec7499f9c540e7f06ef3e2a",
+    "url": "/Potter-Clash/static/media/character7.c9328628.jpeg"
   },
   {
-    "revision": "8f5be5069767b6915a74",
-    "url": "/Potter-Clash/static/css/main.71064d00.chunk.css"
+    "revision": "f8b4075ab5a2bb94eff3",
+    "url": "/Potter-Clash/static/css/main.7d6a73f4.chunk.css"
   },
   {
-    "revision": "d03f6eba7e1b1bf46e24719938c8d493",
-    "url": "/Potter-Clash/static/media/character8_died.d03f6eba.jpeg"
+    "revision": "6edbb8cd4c27061785db6ce660d51c20",
+    "url": "/Potter-Clash/static/media/gobletReward.6edbb8cd.gif"
   },
   {
-    "revision": "0f51b3904728f29f5f83",
-    "url": "/Potter-Clash/static/js/1.0f51b390.chunk.js"
+    "revision": "b4871e388091b772413d",
+    "url": "/Potter-Clash/static/js/1.b4871e38.chunk.js"
   },
   {
     "revision": "f6000c784858c838e921",
@@ -60,12 +60,12 @@ self.__precacheManifest = [
     "url": "/Potter-Clash/static/media/character5.876784d9.jpeg"
   },
   {
-    "revision": "8f5be5069767b6915a74",
-    "url": "/Potter-Clash/static/js/main.8f5be506.chunk.js"
+    "revision": "c392bb5eb0b8777fd1bded963eff3faa",
+    "url": "/Potter-Clash/static/media/character6.c392bb5e.jpeg"
   },
   {
-    "revision": "c9328628bec7499f9c540e7f06ef3e2a",
-    "url": "/Potter-Clash/static/media/character7.c9328628.jpeg"
+    "revision": "f8b4075ab5a2bb94eff3",
+    "url": "/Potter-Clash/static/js/main.f8b4075a.chunk.js"
   },
   {
     "revision": "c904dc21fbaa06facc4fa6bdad19c72c",
@@ -116,11 +116,15 @@ self.__precacheManifest = [
     "url": "/Potter-Clash/static/media/character7_died.0120d03e.jpeg"
   },
   {
-    "revision": "0f51b3904728f29f5f83",
-    "url": "/Potter-Clash/static/css/1.a47df91d.chunk.css"
+    "revision": "d03f6eba7e1b1bf46e24719938c8d493",
+    "url": "/Potter-Clash/static/media/character8_died.d03f6eba.jpeg"
   },
   {
-    "revision": "a43a9e133398c928886f1d20dce2c852",
+    "revision": "b4871e388091b772413d",
+    "url": "/Potter-Clash/static/css/1.da150281.chunk.css"
+  },
+  {
+    "revision": "743d591aedd0fc9c4263efb3e0c1b194",
     "url": "/Potter-Clash/index.html"
   }
 ];
