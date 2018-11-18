@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { NavLink } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
-// Les characters
-
-// Création d'un composant afin d'afficher le mode tournoi
+import character0 from './Img/Characters/character0.jpeg'
+import reward from './Img/gobletReward.gif'
 
 class Tournament extends Component {
     constructor() {
@@ -12,11 +11,11 @@ class Tournament extends Component {
             final: false,
             manche: 0,
             storedData: {
-                winner1: { id: 'Player 1', avatar: "/Images/character0.jpeg" },
-                looser1: { id: 'Player 1', avatar: "/Images/character0.jpeg" },
-                winner2: { id: 'Player 2', avatar: "/Images/character0.jpeg" },
-                looser2: { id: 'Player 2', avatar: "/Images/character0.jpeg" },
-                winner3: { id: 'Player 3', avatar: "/Images/character0.jpeg" },
+                winner1: { id: 'Player 1', avatar: character0 },
+                looser1: { id: 'Player 1', avatar: character0 },
+                winner2: { id: 'Player 2', avatar: character0 },
+                looser2: { id: 'Player 2', avatar: character0 },
+                winner3: { id: 'Player 3', avatar: character0 },
             },
         }
     }
@@ -45,27 +44,6 @@ class Tournament extends Component {
         this.props.getDataBack(this.state)
         localStorage.setItem('ongoingMatch', JSON.stringify(this.state.manche))
     }
-
-    // displayWinner1 = () => {
-    //     if (this.props.gameData.storedData.winner1.avatar != null) {
-    //         return this.props.gameData.storedData.winner1.avatar
-    //     }
-    //     else return "/Images/character0.jpeg"
-    // }
-
-    // displayWinner2 = () => {
-    //     if (this.props.gameData.storedData.winner2.avatar != null) {
-    //         return this.props.gameData.storedData.winner2.avatar
-    //     }
-    //     else return "/Images/character0.jpeg"
-    // }
-
-    // displayWinner3 = () => {
-    //     if (this.props.gameData.storedData.winner3.avatar != null) {
-    //         return this.props.gameData.storedData.winner3.avatar
-    //     }
-    //     else return "/Images/character0.jpeg"
-    // }
 
     displayCharacter = (perso, winner) => {
         if (winner.name)
@@ -137,7 +115,7 @@ class Tournament extends Component {
                 <div className="blocHomePage">
                     <div class="bloc-page-tournoi">
                         <div className="bloc-titre-tour">
-                            <h1 className="titre-general">Congrats {this.state.storedData.nameWinner3} You Won!</h1>
+                            <h1 className="titre-general">Congratulations {this.state.storedData.nameWinner3} You Won!</h1>
                         </div>
                         <hr />
                         <Container className="duel-final">
@@ -150,7 +128,7 @@ class Tournament extends Component {
                             </Row>
                             <Row className="justify-content-center">
                                 <Col md="6">
-                                    <img src="/Images/gobletReward.gif" alt="" />
+                                    <img src={reward} alt="" />
                                 </Col>
                             </Row>
                         </Container>

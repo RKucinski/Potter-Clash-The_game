@@ -33,7 +33,7 @@ render() {
   return (
       <div>
           <div className="VictoryText">
-            <p className="VictoireMessage">Congratulation {this.props.winner} You Win !!!</p>
+            <p className="VictoireMessage">Congratulations {this.props.winner} You Win !!!</p>
             <img className="PhotoCoupe" src={coupe3} alt=""/>
                 <div className='ButtonChoice'>
                     {this.fightTournoi()}

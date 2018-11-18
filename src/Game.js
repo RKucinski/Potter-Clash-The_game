@@ -6,6 +6,8 @@ import KeysLeft from './KeysLeft';
 import KeysRight from './KeysRight';
 import VictoryMessage from './VictoryMessage';
 import logo from './logoHPC.png'
+import character0 from './Img/Characters/character0.jpeg'
+
 
 class Game extends Component {
   constructor(props) {
@@ -18,11 +20,11 @@ class Game extends Component {
       lifePoint1: 100,
       lifePoint2: 100,
       storedData: {
-        winner1: { id: 'Player 1', avatar: "/Images/character0.jpeg" },
-        looser1: { id: 'Player 1', avatar: "/Images/character0.jpeg" },
-        winner2: { id: 'Player 2', avatar: "/Images/character0.jpeg" },
-        looser2: { id: 'Player 2', avatar: "/Images/character0.jpeg" },
-        winner3: { id: 'Player 3', avatar: "/Images/character0.jpeg" },
+        winner1: { id: 'Player 1', avatar: character0 },
+        looser1: { id: 'Player 1', avatar: character0 },
+        winner2: { id: 'Player 2', avatar: character0 },
+        looser2: { id: 'Player 2', avatar: character0 },
+        winner3: { id: 'Player 3', avatar: character0 },
       },
       victory: false,
     }
@@ -50,9 +52,9 @@ class Game extends Component {
           winner1: this.props.choiceData.player1Choice,
           nameWinner1: this.props.homeData.namePlayer1,
           looser1: this.props.choiceData.player2Choice,
-          winner2: { id: 'Player 2', avatar: "/Images/character0.jpeg" },
-          looser2: { id: 'Player 2', avatar: "/Images/character0.jpeg" },
-          winner3: { id: 'Player 3', avatar: "/Images/character0.jpeg" },
+          winner2: { id: 'Player 2', avatar: character0 },
+          looser2: { id: 'Player 2', avatar: character0 },
+          winner3: { id: 'Player 3', avatar: character0 },
         },
         lifePoint2: 1,
         victory: true
@@ -65,9 +67,9 @@ class Game extends Component {
           winner1: this.props.choiceData.player2Choice,
           nameWinner1: this.props.homeData.namePlayer2,
           looser1: this.props.choiceData.player1Choice,
-          winner2: { id: 'Player 2', avatar: "/Images/character0.jpeg" },
-          looser2: { id: 'Player 2', avatar: "/Images/character0.jpeg" },
-          winner3: { id: 'Player 3', avatar: "/Images/character0.jpeg" },
+          winner2: { id: 'Player 2', avatar: character0 },
+          looser2: { id: 'Player 2', avatar: character0 },
+          winner3: { id: 'Player 3', avatar: character0 },
         },
         lifePoint1: 1,
         victory: true
@@ -83,7 +85,7 @@ class Game extends Component {
           winner1: this.state.storedData.winner1,
           looser1: this.state.storedData.looser1,
           nameWinner1: this.state.storedData.nameWinner1,
-          winner3: { id: 'Player 3', avatar: "/Images/character0.jpeg" },
+          winner3: { id: 'Player 3', avatar: character0 },
         },
         lifePoint2: 1,
         victory: true
@@ -99,7 +101,7 @@ class Game extends Component {
           winner1: this.state.storedData.winner1,
           looser1: this.state.storedData.looser1,
           nameWinner1: this.state.storedData.nameWinner1,
-          winner3: { id: 'Player 3', avatar: "/Images/character0.jpeg" },
+          winner3: { id: 'Player 3', avatar: character0 },
         },
         lifePoint1: 1,
         victory: true

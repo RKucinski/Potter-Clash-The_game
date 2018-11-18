@@ -65,7 +65,7 @@ const players = {
         name : "Hermione Granger",
         avatar : hermione,
         avatarDead : hermionedead,
-        maison : "/Images/gryf.png",
+        maison : gryf,
         sprites : "hermioneDisplay",
         border : "red solid thick",
         color : "red",
@@ -245,7 +245,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Harry Potter"], "Harry Potter")}
                                 style={{
-                                    backgroundImage: harry,
+                                    backgroundImage: `url(${harry})`,
                                     borderColor: this.state.borderChosenCharColor1,
                                 }}
                             ></button>
@@ -257,7 +257,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Cedric Diggory"], "Cedric Diggory")}
                                 style={{
-                                    backgroundImage: cedric,
+                                    backgroundImage: `url(${cedric})`,
                                     borderColor: this.state.borderChosenCharColor2,
                                 }}
                             ></button>
@@ -269,7 +269,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Drago Malfoy"], "Drago Malfoy")}
                                 style={{
-                                    backgroundImage: malfoy,
+                                    backgroundImage: `url(${malfoy})`,
                                     borderColor: this.state.borderChosenCharColor3,
                                 }}
                             ></button>
@@ -282,7 +282,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Luna Lovegood"], "Luna Lovegood")}
                                 style={{
-                                    backgroundImage: luna,
+                                    backgroundImage: `url(${luna})`,
                                     borderColor: this.state.borderChosenCharColor4,
                                 }}
                             ></button>
@@ -297,7 +297,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Hermione Granger"], "Hermione Granger")}
                                 style={{
-                                    backgroundImage: hermione,
+                                    backgroundImage: `url(${hermione})`,
                                     borderColor: this.state.borderChosenCharColor5,
                                 }}
                             ></button>
@@ -309,7 +309,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Norbert Dragonneau"], "Norbert Dragonneau")}
                                 style={{
-                                    backgroundImage: norbert,
+                                    backgroundImage: `url(${norbert})`,
                                     borderColor: this.state.borderChosenCharColor6,
                                 }}
                             ></button>
@@ -321,7 +321,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Severus Snape"], "Severus Snape")}
                                 style={{
-                                    backgroundImage: severus,
+                                    backgroundImage: `url(${severus})`,
                                     borderColor: this.state.borderChosenCharColor7,
                                 }}
                             ></button>
@@ -333,7 +333,7 @@ class ChoiceCharacter extends Component {
                                 className="choice"
                                 onClick={() => this.chooseCharacter(players["Sybill Trelawney"], "Sybill Trelawney")}
                                 style={{
-                                    backgroundImage: sybill,
+                                    backgroundImage: `url(${sybill})`,
                                     borderColor: this.state.borderChosenCharColor8,
                                 }}
                             ></button>

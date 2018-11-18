@@ -6,6 +6,16 @@ import InfoPerso2 from './InfoPerso2';
 
 class KeysRight extends Component {
 
+  displayCharImg2(nbrJoueurs, manche) {
+    if (nbrJoueurs === "none")
+      return this.props.choiceData.player2Choice.maison
+    if (nbrJoueurs === "inline-block" && manche === 1)
+      return this.props.choiceData.player2Choice.maison
+    if (nbrJoueurs === "inline-block" && manche === 2)
+      return this.props.choiceData.player4Choice.maison
+    if (nbrJoueurs === "inline-block" && manche === 3)
+      return this.props.storedState.winner2.maison
+  }
   render() {
     return (
       <div className="right">
@@ -14,7 +24,7 @@ class KeysRight extends Component {
         </div>
 
         <div className="blocSortsR">
-          <img className="maisonImage" src={this.props.choiceData.player2Choice.maison}></img>
+          <img className="maisonImage" src={this.displayCharImg2(this.props.homeData.nbrJoueurs, this.props.tournamentData.manche)}></img>
         </div>
 
         <div className="blocTouchesR">
