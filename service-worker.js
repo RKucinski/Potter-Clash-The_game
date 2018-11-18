@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/Potter-Clash/precache-manifest.9fd8f3aa95440ed351ff1ae1ee99d00e.js"
+  "/Potter-Clash/precache-manifest.d1f8309f16820132fd97c9255e409f04.js"
 );
 
 workbox.clientsClaim();
