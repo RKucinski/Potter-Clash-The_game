@@ -1,10 +1,10 @@
 {
   "main.css": "/Potter-Clash/static/css/main.7d6a73f4.chunk.css",
-  "main.js": "/Potter-Clash/static/js/main.3c99e6f8.chunk.js",
-  "main.js.map": "/Potter-Clash/static/js/main.3c99e6f8.chunk.js.map",
+  "main.js": "/Potter-Clash/static/js/main.4adff7ea.chunk.js",
+  "main.js.map": "/Potter-Clash/static/js/main.4adff7ea.chunk.js.map",
   "static/css/1.da150281.chunk.css": "/Potter-Clash/static/css/1.da150281.chunk.css",
-  "static/js/1.48758df3.chunk.js": "/Potter-Clash/static/js/1.48758df3.chunk.js",
-  "static/js/1.48758df3.chunk.js.map": "/Potter-Clash/static/js/1.48758df3.chunk.js.map",
+  "static/js/1.3d82b9e3.chunk.js": "/Potter-Clash/static/js/1.3d82b9e3.chunk.js",
+  "static/js/1.3d82b9e3.chunk.js.map": "/Potter-Clash/static/js/1.3d82b9e3.chunk.js.map",
   "runtime~main.js": "/Potter-Clash/static/js/runtime~main.f6000c78.js",
   "runtime~main.js.map": "/Potter-Clash/static/js/runtime~main.f6000c78.js.map",
   "static/media/character2_died.jpeg": "/Potter-Clash/static/media/character2_died.7cc3c00d.jpeg",
@@ -33,9 +33,9 @@
   "static/media/character6_died.jpeg": "/Potter-Clash/static/media/character6_died.722a502a.jpeg",
   "static/media/character7_died.jpeg": "/Potter-Clash/static/media/character7_died.0120d03e.jpeg",
   "static/media/character8_died.jpeg": "/Potter-Clash/static/media/character8_died.d03f6eba.jpeg",
-  "static/css/1.da150281.chunk.css.map": "/Potter-Clash/static/css/1.da150281.chunk.css.map",
   "static/css/main.7d6a73f4.chunk.css.map": "/Potter-Clash/static/css/main.7d6a73f4.chunk.css.map",
+  "static/css/1.da150281.chunk.css.map": "/Potter-Clash/static/css/1.da150281.chunk.css.map",
   "index.html": "/Potter-Clash/index.html",
-  "precache-manifest.50451c827651a0c91fe426ee3073752d.js": "/Potter-Clash/precache-manifest.50451c827651a0c91fe426ee3073752d.js",
+  "precache-manifest.72b368b387e58d90c1e8002507c84a44.js": "/Potter-Clash/precache-manifest.72b368b387e58d90c1e8002507c84a44.js",
   "service-worker.js": "/Potter-Clash/service-worker.js"
 }
