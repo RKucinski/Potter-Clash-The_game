@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/Potter-Clash/static/media/harrypotter.43b1a27a.jpeg"
   },
   {
-    "revision": "79a60fa8d0b0a4510f51",
-    "url": "/Potter-Clash/static/css/main.a094df5b.chunk.css"
+    "revision": "6111bf5fa09cfa56476e",
+    "url": "/Potter-Clash/static/css/main.5d3d346b.chunk.css"
   },
   {
     "revision": "43b1a27afa42e4b94d23d53902ffda4c",
     "url": "/Potter-Clash/static/media/character1.43b1a27a.jpeg"
   },
   {
-    "revision": "3d1c73a2c92fc237da9b",
-    "url": "/Potter-Clash/static/js/1.3d1c73a2.chunk.js"
+    "revision": "96c5d5ac3032788a03a5",
+    "url": "/Potter-Clash/static/js/1.96c5d5ac.chunk.js"
   },
   {
     "revision": "f6000c784858c838e921",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/Potter-Clash/static/media/coupe3.2b8f8d62.png"
   },
   {
-    "revision": "79a60fa8d0b0a4510f51",
-    "url": "/Potter-Clash/static/js/main.79a60fa8.chunk.js"
+    "revision": "6111bf5fa09cfa56476e",
+    "url": "/Potter-Clash/static/js/main.6111bf5f.chunk.js"
   },
   {
     "revision": "fab96e7856609f59f368fa8c5a1b29b9",
@@ -72,11 +72,11 @@ self.__precacheManifest = [
     "url": "/Potter-Clash/static/media/sybilltrelawney.c904dc21.jpeg"
   },
   {
-    "revision": "3d1c73a2c92fc237da9b",
-    "url": "/Potter-Clash/static/css/1.a6605e34.chunk.css"
+    "revision": "96c5d5ac3032788a03a5",
+    "url": "/Potter-Clash/static/css/1.82872132.chunk.css"
   },
   {
-    "revision": "f5602437839bea194c2bc397f7022356",
+    "revision": "70490c58aae4498776a0b9a1d571513b",
     "url": "/Potter-Clash/index.html"
   }
 ];
